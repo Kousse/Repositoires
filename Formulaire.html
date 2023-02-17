@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="style sheet" href="style.css">
+    <title>Formulaire d'inscription</title>
+</head>
+<body>
+    <p>Formulaire d'inscription-Tous les champs sont obligatoires</p>
+    <form>
+            <label for="prenom">Votre prénom:</label>
+            <input type="text" name="prenom" id="prenom"><br>
+
+            <label for="votrenom">Votre nom:</label>
+            <input type="text" name="nom" id="votrenom"><br>
+
+            <label for="age">Age:</label>
+            <input type="number" min="0" max="100" name="age" id="age"><br>
+
+            <label for="sexe">Sexe</label>
+            <label for="masculin">M</label>
+            <input type="radio" name="choix" id="masculin">
+            <label for="feminin">F</label>
+            <input type="radio" name="choix" id="feminin">
+            <label for="indefini">indefini</label>
+            <input type="radio" name="choix" id="indefini"><br>
+
+            <label for="email">Votre e-mail</label>
+            <input type="email" name="email" id="email" placeholder="Votre adresse mail" required><br>
+   
+            <label for="adressepostal">Adresse Postale:</label>
+            <input type="text" name="adressepostal" id="adressepostal"><br>
+
+            <label for="ville">Ville</label>
+            <input type="text" name="ville" id="ville"><br>
+
+            <label for="codepostal">Code Postal:</label>
+            <input type="text" name="Code Postal" id="codepostal" size="5" maxlength="5" pattern="[0-9]{5}"><br>
+
+            <label for="metierexerce"> Métier exercé</label>
+            <select name="métier exercé">
+             <option value="avocat">avocat</option>
+             <option value="architecte">architecte</option>
+             <option value="web developpeur">web developpeur</option>
+             </select> <br>
+
+            <label for="datenaissance">Quelle est votre date de naissance</label>
+            <input type="date" id="datenaissance" name="date"><br>
+
+            <label>Quelle est votre nationalité</label>
+            <select name="nationalité" id="nationalité">
+            <option value="française" selected>Française</option> 
+            <option value="belge">Belge</option>
+            <option value="espagnole">Espagnole</option>
+        </select>
+    <br>
+            <label for="numerodesecu">numéro de sécurité sociale</label>        
+            <input type="number" 
+            placeholder="n°sécurité social">
+    <br>
+            <label for="numerodepasseport">numéro de passeport</label>
+            <input type="number"
+            placeholder="n°passeport">
+    <br>
+            <label for="datededelivrance">date de délivrance du passeport</label>
+            <input type="date" id="datededelivrance" name="date">
+    <br>
+            <label for="datedevalidite">date de validité du passeport</label>
+            <input type="date" id ="datedevalidite" name="date"><br>
+        <button>Envoyer</button>
+    </form>
+</body>
+</html>
